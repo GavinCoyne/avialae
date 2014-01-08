@@ -17,7 +17,7 @@
 	 		// Your code here to handle a successful verification
     		$gameModel = new Model_Game();
 			$gameModel->setCaptcha();
-			header("Location: ". Session::instance()->get('redir', 'ranking'));
+			header("Location: ". Session::instance()->get('redir', 'home'));
 			die;
  	 	}	
 	

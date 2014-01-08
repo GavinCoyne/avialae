@@ -18,10 +18,10 @@ return array
 			 *
 			 * Ports and sockets may be appended to the hostname.
 			 */
-			'hostname'   => 'localhost',
-			'database'   => 'fallofkingdoms',
-			'username'   => 'root', 
-			'password'   => 'corkey2000!',
+			'hostname'   => '',
+			'database'   => '',
+			'username'   => '', 
+			'password'   => '!',
 			'persistent' => TRUE,
 		),
 		'table_prefix' => '',
@@ -39,7 +39,7 @@ return array
 			 * string   password    database password
 			 * boolean  persistent  use persistent connections?
 			 */
-			'dsn'        => 'mysql:host=localhost;dbname=gacoyne_fallofkingdoms',
+			'dsn'        => 'mysql:host=localhost;dbname=gacoyne_avialae',
 			'username'   => 'gacoyne_root',
 			'password'   => 'Corkey2000!',
 			'persistent' => FALSE,

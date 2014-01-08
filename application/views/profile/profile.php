@@ -15,11 +15,7 @@
 	    		
 	    		?>
 	    					<th>
-	    						<a href="<?=Kohana::$base_url?>Game/attack?target=<?= $username ?>" class="btn btn-primary">Attack</a>
 	    						<a href="<?=Kohana::$base_url?>Messaging/send?to=<?= $username ?>" class="btn btn-info">Send Message</a>
-	    						<a href="<?=Kohana::$base_url?>Profile/addFriend?target=<?= $username ?>" class="btn btn-success">Make Friend</a>
-	    						<a href="<?=Kohana::$base_url?>Messaging/addEnemy?to=<?= $username ?>" class="btn btn-danger">Make Enemy</a>
-	    						<a href="<?=Kohana::$base_url?>Guilds/invite?to=<?= $username ?>" class="btn btn-warning" >Send Guild Invite</a>
 	    					</th>
 	    		<?php 
 	    			}
@@ -27,52 +23,18 @@
 	    			{
 	    				?>
 	    				<td>
-	    				<button id="edit" type="button" class="btn btn-info">Edit</button>
-	    				<a href="<?=Kohana::$base_url?>Profile/edit" class="btn btn-info">Edit</a>
-	    				<a href="<?=Kohana::$base_url?>Profile/settings" class="btn btn-info">Account Settings</a>
-	    				<a href="<?=Kohana::$base_url?>Game/activate" class="btn btn-info">Round Activate</a>
-	    				
+		    				<a href="<?=Kohana::$base_url?>Profile/edit" class="btn btn-info">Edit</a>
+		    				<a href="<?=Kohana::$base_url?>Profile/settings" class="btn btn-info">Account Settings</a>   				
 	    				</td>
 	    		<?php 
 	    			}
 	    		?>
 	    		</tr>
-	    		<tr>
-	    			<th>Rank </th>
-	    			<td><?= isset($info['rank']) ? ($info['rank'] == -1 ? '-' : $info['rank']): "-" ?></td>
-	    		</tr>
-	    		<tr>
-	    			<th>Points </th>
-	    			<td><?= isset($info['points']) ? $info['points'] : "-"?></td>
-	    		</tr>
-	    		<tr>
-	    			<th>Gold </th>
-	    			<td><?= isset($info['points']) ? $info['gold'] : "-"?></td>
-	    		</tr>
-	    		<tr>
-	    			<th>Karma </th>
-	    			<td><?= isset($info['points']) ? "%".$info['karma']/100 : "-"?></td>
-	    		</tr>
-	    		<tr>
-	    			<th>Race </th>
-	    			<td><?= isset($info['raceName']) ? $info['raceName'] : "-"?></td>
-	    		</tr>
-	    		<tr>
-	    			<th>Army </th>
-	    			<td><?= isset($info['points']) ? $info['army'] : "-"?></td>
-	    		</tr>
-				<tr>
-	    			<th>About me: </th>
-	    			<td>Stuff</td>
-	    		</tr>
-	    		<tr>
-	    			<th>Minions </th>
-	    			<td>YOU!</td>
-	    		</tr>
+
 	    		
 	    		<tr>
 	    		
-	    			<td></td>
+	    			<td>Infor here</td>
 	    		</tr>
 	    		
 	  </table>

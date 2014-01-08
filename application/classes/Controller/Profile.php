@@ -8,19 +8,7 @@ class Controller_Profile extends Controller_GameTemplate {
 		if($username)
 		{
 			$profileModel = new Model_Profile();
-			$info = $profileModel->getProfileByName($username);
 
-			if($info && $info[0] != null)
-			{
-			
-				
-				$this->template->title = $username." - Profile";		
-				$this->template->content = View::factory('profile/profile')
-														->set('username', $username)
-														->set('info', $info[0]);
-			}
-			else 
-			{
 				$profileModel = new Model_Profile();
 				$info = $profileModel->getProfileByNameNotActivate($username);
 				if($info)
@@ -35,7 +23,7 @@ class Controller_Profile extends Controller_GameTemplate {
 					$this->template->content = "Error loading user";
 				}
 					
-			}
+			
 		}
 	}
 	public function action_settings()
