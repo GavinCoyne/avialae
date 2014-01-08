@@ -1,0 +1,53 @@
+.table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+    background-color: hsla(30, 27%, 43%, 0.99);
+}
+
+.unreadPM
+{
+	background-color:hsla(54, 75%, 67%, 0.99);
+}
+
+.readPM
+{
+	background-color:hsla(27, 50%, 36%, 0.91);
+}
+
+
+a:hover
+{
+	cursor:hand;
+	}	
+	
+.nav li a
+{
+	background-color:#000000;	
+}
+
+body
+{
+	background:#D6D68F;	
+	height:100%;
+}
+
+.container
+{
+	background:#3D3629;
+	color:#FFF;
+	border-left:10px solid #B8B37A;
+	border-right:10px solid #B8B37A;	
+	min-height:100%;
+	bottom:0;
+}
+
+.footer
+{
+	clear:left;
+	bottom:0;
+	width:100%;
+	text-align:center;
+}
+	
+html
+{
+	height:100%;	
+}
